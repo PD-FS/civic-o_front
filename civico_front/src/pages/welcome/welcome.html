@@ -1,15 +1,21 @@
 
-<ion-content scroll="false">
-
-
+<ion-content class="no-scroll">
   <div class="fondo">
-    <div class="splash-logo"></div>
-    <div class="splash-intro">
-      {{ 'Civic-o' | translate }}
-    </div>
-  <div padding>
-    <button ion-button block (click)="signup()"class="login">{{ 'SIGNUP' | translate }}</button>
-    <button ion-button block (click)="login()" class="login">{{ 'LOGIN' | translate }}</button>
-  </div>
+      <ion-row>
+          <ion-col>
+          </ion-col>
+          <ion-col col-8>
+              <div class="splash-intro">
+                  {{ 'Civic-o' | translate }}
+              </div>
+              <div class="splash-logo"></div>
+              <div>
+                <button ion-button block (click)="signup()"class="login">{{ 'SIGNUP' | translate }}</button>
+                <button ion-button block (click)="login()" class="login">{{ 'LOGIN' | translate }}</button>
+              </div>
+          </ion-col>
+          <ion-col>
+          </ion-col>
+      </ion-row>
   </div>
 </ion-content>
